@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .task1{
+            background-color:#9fd3c7;
+            font-family: 'Times New Roman', Times, serif;
+            border-color: white;
+            width:900px;
+            margin:0 auto;
+            
+
+        }
+        h1{
+            color: blue;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 900;
+            font-size: xx-large;
+        }
+        h2{
+            color: blue;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: x-large;
+            font-weight: 900;
+            text-align: center;
+        }
+        .Bordered-list{
+            border: 1px solid #333;
+            width: fit-content;
+            padding-left: 20px;
+            margin: 0 auto;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+        }
+        .Bordered-link{
+            border: 1px solid #333;
+            width:800px;
+            background-color:#f0ece2 ;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            font-size: larger;
+            margin:0 auto;
+            margin-top: 10px;
+        }
+        .task3{
+           font-family: 'Times New Roman', Times, serif;
+           font-weight: 700;
+           width: fit-content;
+        }
+        .declare{
+            width: 1000px;
+        }
+        .register-form{
+            width: 500px;
+            margin:0 auto; 
+        }
+        button{
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Task 1</h1>
+    <table class="task1" border="1" cellspacing="0" cellpadding="5" >
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>Task 2</h1>
+    <div class="Bordered-list">
+        <p>List can be nested(list inside list):</p>
+        <ul>
+            <li>Cofee</li>
+            <li>Tea</li>
+            <ul>
+                <li>Black Tea</li>
+                <li>Green Tea</li>
+            </ul>
+            <li>Milk</li>
+        </ul>
+    </div>
+    <div class="Bordered-link">
+        <p>Click any of the following links</p>
+        <nav>
+            <a href="">Opens in new</a>|
+            <a href="">Opens in slef</a>|
+            <a href="">Opens in parent</a>|
+            <a href="">Opens in body</a>
+          </nav>
+    </div>
+
+    <h1>Task 3</h1>
+    <h2>Registration Form</h2>
+    <div class="register-form">
+        <form>
+            <table class="task3" border="1" cellspacing="0" cellpadding="5" width="100%">
+                <tr>
+                    <td><label for="First Name">First name</label></td>
+                    <td><textarea name="Message" id="" cols="40" rows="1"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="Last Name">Last name</label>
+                    <td><textarea name="Message" id="" cols="40" rows="1"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><textarea name="Message" id="" cols="40" rows="1"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label>
+                    <td><textarea name="Message" id="" cols="40" rows="1"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="re-enter password">Re-enter Password</label>
+                    <td><textarea name="Message" id="" cols="40" rows="1"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender</label></td>
+                    <td colspan="2">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="age">Age</label>
+                    <td><textarea name="Number" id="" cols="40" rows="1"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="phone-number">Phone Number</label>
+                    <td><textarea name="Number" id="" cols="40" rows="1"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address</label>
+                    <td><textarea name="Message" id="" cols="40" rows="5"></textarea></td>
+                </tr>
+                <tr> 
+                    <td><label for="state">State</label>
+                    <td><textarea name="Message" id="" cols="40" rows="1"></textarea></td>  
+                </tr>
+                  <tr>
+                    <td><label for="country">Country:</label></td>
+                    <td>
+                      <select id="country" name="country">
+                        <option value="" disabled selected>Choose your country</option>
+                        <option value="usa">United States</option>
+                        <option value="india">India</option>
+                        <option value="uk">United Kingdom</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label>Languages known:</label></td>
+                    <td>
+                      <input type="checkbox" id="english" name="languages" value="english">
+                      <label for="english">English</label>
+                      
+                      <input type="checkbox" id="kannada" name="languages" value="kannada">
+                      <label for="kannada">Kannada</label>
+                      
+                      <input type="checkbox" id="hindi" name="languages" value="hindi">
+                      <label for="hindi">Hindi</label>
+                      
+                      <input type="checkbox" id="telugu" name="languages" value="telugu">
+                      <label for="telugu">Telugu</label>
+                    </td>
+                  </tr>
+            </table>
+            <table>
+                  <tr class="declare">
+                    <td>
+                        <input type="checkbox" id="declaration" name="declaration" required >
+                        <label for="declaration" >Hereby I declare all the given details are true</label>
+                    </td>
+                  </tr>
+                  <tr class="declare">
+                    <td>
+                      <p>login to <a href="https://www.acharya.ac.in/">Acharya</a> website</p>
+                    </td>
+                  </tr>
+            </table>
+                <button type="register">Register</button>
+        </form>
+    </div>
+</body>
+</html>
